@@ -69,7 +69,7 @@ const MyProfile = () => {
         const userData = await userResponse.json();
 
         setName(userData.username);
-        setDesc(`Welcome to ${name} personalized Page`);
+        setDesc(`Welcome to ${userData.username} personalized Page`);
       } else {
         setName("My");
         setDesc("Welcome to your personalized Page");
